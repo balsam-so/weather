@@ -121,11 +121,11 @@ function getWeekDay(date) {
 
 function getWeatherByCity(city) {
   getCityWeather(
-    `https://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=35b1f1d45a7b4378cf2430ae601816be&mode=xml`
+    `https://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=35b1f1d45a7b4378cf2430ae601816be&units=metric&mode=xml`
   );
 }
 function getForecastByCity(city) {
   getForecast(
-    `https://api.openweathermap.org/data/2.5/forecast?q=${city}&APPID=35b1f1d45a7b4378cf2430ae601816be`
+    `https://api.openweathermap.org/data/2.5/forecast?q=${city}&APPID=35b1f1d45a7b4378cf2430ae601816be&units=metric`
   );
 }
